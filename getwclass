@@ -1,0 +1,5 @@
+#!/bin/sh
+# This is a script to get the class string of a window.
+# just run the script and click on a window
+
+xprop WM_CLASS | grep -o '"[^"]*"' | sed 1q
