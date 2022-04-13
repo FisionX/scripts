@@ -1,0 +1,4 @@
+#!/bin/sh
+f=$1
+file_without_ext=${f%.*}
+ffmpeg -i $f -strict experimental $file_without_ext.mp4

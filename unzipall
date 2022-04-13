@@ -1,0 +1,9 @@
+#!/bin/sh
+for file in ./*.zip;
+do
+	file_without_ext=${file%.*}
+	#mkdir ${file_without_ext}
+
+	#unzip "'$f'" -d ${file_without_ext}
+	7z x "./$file" -o"${file_without_ext}" && rm "$f"
+done
