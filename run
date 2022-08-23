@@ -1,4 +1,11 @@
 #!/bin/sh
+#	This script allows to run daemons with runit
+#	as the user you desire insthead of root
+
+#	add this script into /etc/runit/sv/runsvdir-user
+#	and create a service dir in the user home folder
+#	then you can link services to that directory
+
 
 export USER="fernando"
 export HOME="/home/fernando"
