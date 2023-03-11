@@ -4,8 +4,8 @@ file_without_ext=${f%.*}
 #mkdir ${file_without_ext}
 
 #Just for testing variables
-echo "$1"
+#echo "$1"
 echo ${file_without_ext}
 
 #unzip "'$f'" -d ${file_without_ext}
-7z x "./$f" -o"${file_without_ext}" && rm "$f"
+7z x "./$f" -o"${file_without_ext}"
