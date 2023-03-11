@@ -1,0 +1,16 @@
+#!/bin/sh/
+
+for f in *.txt
+do
+    fullfile="$f"
+
+    # filename without path (on_time.txt)
+   # filename=$(basename "$fullfile")
+
+    # remove extension of filename (on_time)
+    #filename_woext="${filename%.*}"
+
+    # replace all occurrences of "replace" with "on_time" in file
+    sed -i -e "s/replace/$filename_woext/g" $filename
+
+done

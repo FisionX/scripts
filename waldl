@@ -11,6 +11,12 @@ version="0.0.1"
 # Select the wallpapers using `m` on the image. ( marking the image in sxiv )
 # press `q` to quit sxiv, the marked images would start downloading
 
+# Dependencies
+# sxiv
+# jq
+# curl
+# dmenu
+
 ####################
 ## User variables ##
 ####################
