@@ -5,9 +5,17 @@ do
 	#mkdir ${file_without_ext}
 
 	#unzip "'$f'" -d ${file_without_ext}
-	7z x "./$file" -o"${file_without_ext}" && rm $file
+	7z x "./$file" -o"${file_without_ext}" && rm "$file"
 done
 for file in ./*.rar;
+do
+	file_without_ext=${file%.*}
+	#mkdir ${file_without_ext}
+
+	#unzip "'$f'" -d ${file_without_ext}
+	7z x "./$file" -o"${file_without_ext}" && rm "$file"
+done
+for file in ./*.7z;
 do
 	file_without_ext=${file%.*}
 	#mkdir ${file_without_ext}
